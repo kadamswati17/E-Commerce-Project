@@ -1,27 +1,63 @@
-# EcommerceHomepage
+EcommerceHomepage
+An e-commerce platform built with Angular, offering dynamic and responsive design for browsing featured products, latest rentals, and various categories.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+Project Overview
+This web-based platform allows users to:
+Browse categories like milk products, sweets, spices, and pickles.
+Explore featured products and view the latest rentals.
+Interact with an automatic image carousel showcasing product categories.
+The app is optimized for mobile and desktop views, featuring a clean layout with interactive design elements.
 
-## Development server
+Features
+Shop by Categories: Browse products by selecting specific categories.
+Featured Categories Slider: Automatic image carousel for categories.
+Featured Products Section: Highlighted products displayed with names, images, and prices.
+Responsive Design: Optimized for all screen sizes with interactive hover effects.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Technologies Used
+Angular - Front-end framework
+SCSS - Styling
+TypeScript - Logic and component interaction
+HTML - Structure and layout
 
-## Code scaffolding
+Setup and Installation Prerequisites:
+Ensure Node.js and Angular CLI are installed.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Installation
+Clone the repository:
+git clone https://github.com/kadamswati17/ecommerce-homepage.git
+cd ecommerce-homepage
 
-## Build
+Install dependencies:
+npm install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Running the Project
+Use the Angular development server to run the app:
+ng serve
 
-## Running unit tests
+Navigate to http://localhost:4200/ to view the application
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+src/
+├── app/
+│   ├── components/
+│   │   ├── header/                # Header component
+│   │   ├── banner/                # Banner component
+│   │   ├── category-section/      # Category section
+│   │   ├── featuredcategories/    # Featured categories slider
+│   │   ├── rentals/               # Rentals component
+│   │   ├── product-card/          # Product card for featured products
+│   │   └── footer/                # Footer component
+│   ├── services/                  # Service files
+│   ├── app.component.ts           # Root component
+│   ├── app.component.html         # Root template
+│   └── app.module.ts              # Main module file
+└── assets/                        # Static assets
+└── styles/                        # Global styles
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Development Commands
+Run Dev Server: ng serve – Starts the app on http://localhost:4200/.
+Generate Component: ng generate component <component-name>
+Build Project: ng build – Builds to dist/ directory.
+Run Unit Tests: ng test via Karma.
+For additional Angular CLI commands, check out the Angular CLI Documentation.
