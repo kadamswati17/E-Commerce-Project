@@ -1,0 +1,111 @@
+/* Overall style for the horizontal navigation list */
+.horizontal-list {
+    display: flex; /* Enables flexbox */
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    background-color: #ccec9b; /* Background color for the list */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space out items */
+}
+
+/* Styles for individual list items */
+.horizontal-list li {
+    margin-right: 20px; /* Space between list items */
+}
+
+/* Remove margin for the last item */
+.horizontal-list li:last-child {
+    margin-right: 0; 
+}
+
+/* Anchor link styles */
+a {
+    text-decoration: none; /* Removes underline */
+    color: black; /* Link color */
+    transition: color 0.3s; /* Transition for color change on hover */
+}
+
+/* Change link color on hover */
+a:hover {
+    color:blue; /* Change to blue on hover */
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex; /* Use Flexbox to align items in a row */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space out items */
+    background-color: rgb(240, 232, 232); /* Navbar background color */
+    padding: 8px; /* Padding around the navbar */
+    color: black; /* Text color */
+}
+
+/* Styles for logo */
+.navbar p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Font size for LOGO */
+}
+
+/* Input field styles in the navbar */
+.navbar input[type="text"] {
+    padding: 5px; /* Padding inside input fields */
+    margin-left: 15px; /* Spacing between inputs */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 15px; /* Font size for input */
+}
+
+/* Placeholder text color */
+.navbar input[type="text"]::placeholder {
+    color: black; /* Placeholder text color */
+}
+
+/* Button styles */
+.btn {
+    color: black;
+    border-radius: 4px; /* Rounded corners */
+    background-color:rgb(184, 214, 137); /* Button background color */
+
+}
+
+/* Header styling */
+.header {
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Vertically center items */
+    gap: 15px; /* Space between header items */
+    font-size: 15px; /* Font size */
+    color: #333; /* Text color */
+    background-color: #8ae392; /* Background color */
+    padding: 10px; /* Padding around the header */
+}
+
+/* Paragraph styles in the header */
+.header p {
+    margin: 0; /* Remove default margin */
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Vertically center items */
+    padding-left: 25px; /* Padding on the left */
+}
+.div1{
+    padding-left: 10px;
+}
+/* Right-side menu styling */
+.right-menu {
+
+    padding-top: 3px;
+    margin-right: 8px;
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    margin-top: 5px;
+}
+
+.btn btn-outline-success{
+    margin-bottom: 10px;
+}
+
+/* Change button color on hover */
+.login-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

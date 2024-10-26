@@ -1,0 +1,14 @@
+<div class="products-container">
+    <h2>Our Delicious Food Items</h2>
+    <div class="product-grid">
+      <div class="product-card" *ngFor="let item of foodItems" #productCard>
+        <img [src]="item.image" [alt]="item.name" />
+        <h4>{{ item.name }}</h4>
+        <p>₹ {{ item.price }}</p>
+        <button (click)="addToCart(item, productCard)">Add to Cart</button>
+        <!-- Confirmation overlay -->
+        <div class="confirmation-overlay">Added to Cart</div>
+      </div>
+    </div>
+  </div>
+  

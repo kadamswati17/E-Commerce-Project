@@ -1,0 +1,26 @@
+<app-header></app-header>
+<app-banner></app-banner>
+
+<section class="shop-categories">
+  <h2>Shop By Categories</h2>
+  <app-category-section></app-category-section>
+</section>
+
+<!-- Featured Categories Section -->
+<section class="featured-categories">
+  <h2>Featured Categories</h2>
+  <app-featuredcategories></app-featuredcategories>
+</section>
+
+<section class="latest-rentals">
+  <app-rentals></app-rentals> <!-- Add Rentals component -->
+</section>
+
+<section class="featured-products">
+  <h2>Featured Products</h2>
+  <div class="products-grid">
+    <app-product-card *ngFor="let product of featuredProducts" [product]="product"></app-product-card>
+  </div>
+</section>
+
+<app-footer></app-footer>

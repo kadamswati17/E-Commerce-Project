@@ -1,0 +1,58 @@
+<header class="header">
+  <p>📞 +91 0012151254</p>
+  <p>✉️ example&#64;email.com</p>
+</header>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+<nav class="navbar">
+  <p>LOGO</p>
+  <div class="input-container">
+    <i class="fa fa-map-marker-alt"></i> <!-- Map icon inside the input field -->
+    <input type="text" placeholder="map" />
+  </div>
+  <div class="input-container">
+    <i class="fa fa-search"></i> <!-- Search icon inside the input field -->
+    <input type="text" placeholder="Search for Products..." />
+  </div>
+  <button class="btn">MARATHI</button>
+</nav>
+
+
+
+<div >
+  <ul class="horizontal-list">
+    <!-- Left-side Menu -->
+    <li><a class="div1" routerLink="/" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/food" routerLinkActive="active">Food</a></li>
+    <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
+    <li><a routerLink="/rentals" routerLinkActive="active">Rentals</a></li>
+    <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+
+    <!-- Right-side Menu -->
+    <div class="right-menu">
+      <li>
+        <a routerLink="/wishlist" routerLinkActive="active">
+          <i class="fas fa-heart"></i> Wishlist
+        </a>
+      </li>
+      <li>
+        <a routerLink="/cart" routerLinkActive="active">
+          <i class="fas fa-shopping-cart"> </i> Cart {{ cartCount }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="/profile" routerLinkActive="active">
+          <i  class="fas fa-user"></i> Profile
+        </a>
+      </li>
+      <li>
+        <!-- <button class="login-btn" routerLink="/login">LOGIN</button> -->
+        <button class="btn btn-outline-success" type="submit" routerLink="/login">LOGIN</button>
+      </li>
+    </div>
+  </ul>
+</div>
+
+<!-- This is where routed components will be displayed -->
+<router-outlet></router-outlet>

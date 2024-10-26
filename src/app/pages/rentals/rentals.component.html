@@ -1,0 +1,10 @@
+<div class="products-container">
+    <h2>Our Latest Rentals</h2>
+    <div class="product-grid">
+        <div class="product-card" *ngFor="let rental of rentals">
+            <img [src]="rental.image" [alt]="rental.name" />
+            <!-- <h4>{{ rental.name }}</h4> -->
+            <!-- Removed price and button for rentals -->
+        </div>
+    </div>
+</div>

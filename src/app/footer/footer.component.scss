@@ -1,0 +1,137 @@
+footer h6 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+footer hr {
+  border-color: #eaeaea;
+}
+
+@media (min-width: 992px) { /* Large screens */
+  footer .row {
+      justify-content: space-around; /* Even spacing between columns */
+  }
+  footer .row > div {
+      text-align: left;
+  }
+}
+
+.bg-light.py-4 {
+  background-color: #a4de85 !important;
+}
+
+.nav1 {
+  // background-color: #a4de85;
+  display: flex;
+  padding: 20px;
+}
+
+.div1 {
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.div1 p {
+  font-size: 15px;
+}
+
+a i {
+  color: #333;            /* Default icon color */
+  font-size: 1.5rem;      /* Icon size */
+  margin: 0 10px;         /* Space between icons */
+  text-decoration: none;  /* Remove underline */
+}
+
+.symbol {
+  padding: 0;
+  display: flex;
+}
+
+.col-lg-2 {
+  padding-left: 120px;
+  padding-top: 20px;
+}
+
+.icons {
+  padding: 0;
+  padding-top: 0;
+  margin-left: 0;
+  display: inline;
+}
+
+.col-lg-3 {
+  margin-top: 25px;
+  // padding-left: 50px;
+  padding-left: 125px;
+
+}
+
+.image-overlay-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-overlay-container img {
+  width: 100%;
+  height: 500px; /* Set a specific height, adjust as needed */
+  // object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+
+.overlay-text {
+  position: absolute;
+  bottom:0%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* Text color */
+}
+
+.overlay-text h1 {
+  color: blanchedalmond;
+  font-size: 2em;
+  margin: 0;
+}
+.overlay-text{
+  margin-right: -185px;
+  margin-bottom: -20px;
+}
+.overlay-text p {
+  color: blanchedalmond;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.bottom-right-text {
+  position: absolute;
+  bottom: 10px; /* Adjust as necessary */
+  right: 10px; /* Adjust as necessary */
+  color: #fff; /* Text color */
+  font-size: 1.2em; /* Font size */
+  background: rgba(0, 0, 0, 0.5); /* Optional: add background for better readability */
+  padding: 5px; /* Optional: add some padding */
+  border-radius: 5px; /* Optional: round the corners */
+}
+
+.btn{
+  background-color:rgb(79, 79, 161);
+}

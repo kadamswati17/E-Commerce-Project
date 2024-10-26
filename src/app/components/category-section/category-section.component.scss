@@ -1,0 +1,96 @@
+.categories {
+  padding-left: 200px;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  margin: 20px; /* Add some margin around the category section */
+}
+
+.categories-container {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (if needed) */
+  margin: 0 auto; /* Center the container */
+}
+
+.category1, .category2, .category3, .category4 {
+  position: relative; /* Positioning context for the overlay */
+  text-align: center; /* Center the text under each image */
+  margin: 0; /* Remove margin between categories */
+  border-radius: 8px; /* Optional: Add rounded corners to the categories */
+  overflow: hidden; /* Prevent content overflow */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+
+  &:hover {
+      transform: translateY(-5px); /* Lift effect on hover */
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+}
+
+/* Set specific widths for each category */
+.category1 {
+  flex: 0 0 35%; /* First category takes 35% width */
+}
+
+.category2 {
+  flex: 0 0 45%; /* Second category takes 45% width */
+}
+
+.category3 {
+  flex: 0 0 45%; /* Third category takes 45% width */
+}
+
+.category4 {
+  flex: 0 0 35%; /* Fourth category takes 35% width */
+}
+
+/* Category image styles */
+.category1 img,
+.category2 img,
+.category3 img,
+.category4 img {
+  width: calc(100% - 20px); /* Make image fill the width of the category with padding */
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensure the image covers the area */
+  border-radius: 15px; /* Optional: Add rounded corners to the images */
+  margin: 10px; /* Add margin for spacing around the images */
+}
+
+/* Overlay styles */
+.overlay {
+  border-radius: 15px;
+  position: absolute; /* Position the overlay on top of the image */
+  top: 10px; /* Align with the image's margin */
+  left: 10px; /* Align with the image's margin */
+  width: calc(100% - 20px); /* Subtract the margin for width */
+  height: calc(100% - 20px); /* Subtract the margin for height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  background: rgba(0, 0, 0, 0.4); /* Dark background with lower opacity */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+  padding: 10px; /* Padding around the text */
+}
+
+/* Shop Now button styles */
+.shop-now {
+  background: #ffcc00; /* Button color */
+  color: black; /* Button text color */
+  padding: 8px 16px; /* Button padding */
+  border-radius: 8px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  margin-top: 5px; /* Space between text and button */
+}
+
+h3 {
+  margin: 0; /* Remove default margin */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .category1, .category2, .category3, .category4 {
+      flex: 0 0 100%; /* Make each category full width on small screens */
+  }
+}

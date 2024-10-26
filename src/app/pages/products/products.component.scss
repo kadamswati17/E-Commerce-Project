@@ -1,0 +1,125 @@
+.products-container {
+    padding: 20px;
+    text-align: center;
+  
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #333;
+    }
+  
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+  
+    .product-card {
+      width: 100%;
+      max-width: 280px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #fff;
+      text-align: center;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+  
+      img {
+        width: 100%;
+        height: 200px; // Set a fixed height for uniformity
+        object-fit: cover; // Ensures images are cropped to fit the frame
+      }
+  
+      h4 {
+        margin: 10px 0;
+        font-size: 1.25rem;
+        color: #444;
+        font-weight: bold;
+      }
+  
+      p {
+        margin: 0;
+        padding: 0 10px;
+        font-size: 1.1rem;
+        color: #333;
+      }
+  
+      .price {
+        font-size: 1.2rem;
+        color: #007bff;
+        font-weight: 600;
+        margin: 10px 0;
+      }
+  
+      button {
+        width: 80%;
+        margin: 15px auto;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    h2 {
+      font-size: 1.75rem;
+    }
+  
+    .product-card {
+      max-width: 100%;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  }
+
+  .confirmation-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none; /* Prevent interaction when hidden */
+  }
+
+  .confirmation-overlay.visible {
+    opacity: 1;
+    pointer-events: auto; /* Allow interaction when visible */
+  }

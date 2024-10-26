@@ -1,0 +1,17 @@
+.products-grid img {
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the desired height */
+    object-fit: cover; /* Cover will maintain aspect ratio and fill the box */
+  }
+  .shop-categories h2 {
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove default margin for consistency */
+  }
+  .featured-products h2{
+    text-align: center; /* Center the text */
+    margin: 20px; /* Remove default margin for consistency */
+  }
+.featured-categories h2{
+    text-align: center; /* Center the text */
+    margin: 20px; /* Remove default margin for consistency */
+  }
